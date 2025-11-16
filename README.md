@@ -87,6 +87,10 @@ To execute unit tests with the [Karma](https://karma-runner.github.io) test runn
 yarn test
 ```
 
+## Screenshots
+<img width="2169" height="1890" alt="image" src="https://github.com/user-attachments/assets/e30262b0-826c-4709-a21d-a54033f1e519" />
+<img width="1120" height="1523" alt="image" src="https://github.com/user-attachments/assets/0eaabe8c-aaf7-4d10-a20a-44c0190e347b" />
+
 
 
 ## Build Log (Windows)
