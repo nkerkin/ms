@@ -13,6 +13,7 @@ const validPitDto: PitDto = {
       type: 'Truck',
       bounds: { x: 100, y: 100, width: 50, height: 30 },
       status: 'IDLE',
+      speed: 0,
     },
   ],
 };

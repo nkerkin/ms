@@ -37,6 +37,7 @@ export interface VehicleDto {
     height: number;
   };
   status: string;
+  speed: number;
 }
 
 export function createPitModel(dto: PitDto): PitModel {
@@ -50,6 +51,7 @@ export function createPitModel(dto: PitDto): PitModel {
       height: makePositiveNumber(vehicle.bounds.height),
     },
     status: parseVehicleStatus(vehicle.status),
+    speed: makeNonNegativeNumber(vehicle.speed),
   }));
 
   if (vehicles.map((v) => v.id).length !== new Set(vehicles.map((v) => v.id)).size) {

@@ -1,4 +1,4 @@
-import { Brand, Rect } from './types';
+import { Brand, NonNegativeNumber, Rect } from './types';
 
 // Vehicle ID
 type VehicleId = Brand<string, 'VehicleId'>;
@@ -24,7 +24,7 @@ export function parseVehicleType(value: string): VehicleType {
 }
 
 // Vehicle Statuses
-// TODO: should define based on VehicleType
+// TODO: these would ideally be defined based on VehicleType
 const VehicleStatuses = {
   LOADING: 'LOADING',
   HAULING: 'HAULING',
@@ -47,4 +47,5 @@ export interface VehicleModel {
   type: VehicleType;
   bounds: Rect;
   status: VehicleStatus;
+  speed: NonNegativeNumber;
 }
